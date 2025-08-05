@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdelmoez boucetta - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="x-icon">
+</head>
+<body>
+   <!-- ===== MODAL BOXES ===== -->
+   <div class="modal" id="myModal">
+       <div class="modal-content">
+           <span class="close"><i class="fa fa-times"></i></span>
+           <div class="content-title"><span>Skills</span></div>
+           <div class="skills-box">
+               <span class="skills-label">HTML</span>
+               <span class="skills-label">CSS</span>
+               <span class="skills-label">Angular</span>
+               <span class="skills-label">JavaScript</span>
+               <span class="skills-label">React</span>
+               <span class="skills-label">Vue</span>
+               <span class="skills-label">PHP</span>
+               <span class="skills-label">MySQL</span>
+           </div>
+       </div>
+   </div>
+
+   <div class="modal" id="myModal1">
+    <div class="modal-content">
+        <span class="close"><i class="fa fa-times"></i></span>
+        <div class="content-title"><span>Service We Offer</span></div>
+        <div class="desc_content">
+            <p>I work together with my team to offer best services in:</p>
+            <ul class="services_list">
+                <li>Web Development</li>
+                <li>Web Design</li>
+                <li>Web Hosting</li>
+                <li>Software Development</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal" id="myModal2">
+    <div class="modal-content">
+        <span class="close"><i class="fa fa-times"></i></span>
+        <div class="content-title"><span>About Me</span></div>
+         <p>I am a skilled and creative frontend web developer with a passion for crafting engaging 
+            and user-friendly web interfaces. My expertise lies in transforming design concepts into 
+            responsive and visually appealing websites and web applications. 
+            With a strong foundation in HTML, CSS, and JavaScript, I excel at implementing responsive design, 
+            optimizing performance, and ensuring cross-browser compatibility</p>
+    </div>
+   </div>
+
+   <!-- ===== WRAPPER ===== -->
+   <div class="wrapper">
+        <!-- NAVIGATION BAR (unchanged) -->
+        <nav class="nav">
+            <div class="nav_logo">
+                <span>abdelmoez boucetta</span>
+            </div>
+            <div class="right_nav">
+                <div class="nav_menu" id="navMenu">
+                    <ul class="link_list">
+                        <div class="close-menu">
+                            <i class="fa fa-times" onclick="menuClose()"></i>
+                        </div>
+                        <li class="list"><a href="#" class="link">Home</a></li>
+                        <li class="list">
+                            <a href="#myModal" class="link">Skills <i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                        <li class="list">
+                            <a href="#myModal1" class="link">Services <i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                        <li class="list">
+                            <a href="#myModal2" class="link">About <i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="nav_menu_btn">
+                    <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="row hero">
+                <div class="col col-1">
+                    <div class="social_icons">
+                        <div class="icon_circle"></div>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                        <a href="https://dribbble.com" target="_blank"><i class="fa-brands fa-dribbble icon"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+                        <a href="https://behance.com" target="_blank"><i class="fa-brands fa-behance icon"></i></a>
+                    </div>
+                    <div class="hero_box">
+                        <div class="hello"><p>Hello, I Am</p></div>
+                        <div class="job"><span class="multiText">Designer</span></div>
+                        <div class="hero_description">
+                            <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites.</p>
+                        </div>
+                        <div class="hero_btn">
+                            <button class="btn_1">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-2">
+                    <div class="circle"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Ccircle cx='300' cy='300' r='290' fill='%23ffa500' opacity='0.1'/%3E%3C/svg%3E" alt=""></div>
+                    <div class="hero-image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350' viewBox='0 0 350 350'%3E%3Ccircle cx='175' cy='175' r='170' fill='%230b7dda'/%3E%3C/svg%3E" alt="Profile"></div>
+                    <div class="clients"><i class="fa-regular fa-user"></i><div class="clients-content"><span>2k +</span><p>Happy Clients</p></div></div>
+                    <div class="experience"><i class="fa-regular fa-star"></i><div class="xp-content"><span>10 +</span><p>Years of experience</p></div></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ======================== -->
+    <!-- ✅ UPDATED PROJECTS SECTION -->
+    <!-- ======================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- E-commerce Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Novus AI.png" alt="Novus AI">
+                    </div>
+                    <div class="project-content">
+                        <h3>Novus AI</h3>
+                        <p>Simple and intelligent artificial intelligence that helps users explain programs, write codes, and more... </p>
+                        <div class="project-tech"><span>AI</span><span>chat</span><span>bot</span></div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Task Management App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/NestedNote .png" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>NestedNote</h3>
+                        <p>Kanban-style productivity tool with drag & drop interface.</p>
+                        <div class="project-tech"><span>Vue.js</span><span>Firebase</span><span>Tailwind CSS</span></div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Travel Blog Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/travel.png" alt="Travel Blog Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>Travel Blog Platform</h3>
+                        <p>Content management system for travel enthusiasts to share stories.</p>
+                        <div class="project-tech"><span>WordPress</span><span>PHP</span><span>MySQL</span></div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact + Footer (unchanged) -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i><span>boucettamoez23@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i><span>+213 65 99 01 101</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i><span>biskra, algeria</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><input type="text" placeholder="Subject"></div>
+                    <div class="form-group"><textarea placeholder="Your Message" rows="5" required></textarea></div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot + Footer (unchanged) -->
+    <div class="chatbot-btn" id="chatbotBtn">
+      <i class="fas fa-message"></i>
+      <div class="chatbot-badge">AI</div>
+    </div>
+    <div class="chatbot-modal" id="chatModal">
+        <div class="chat-header"><h3>AI Assistant</h3><button class="close-chat" id="closeChat">&times;</button></div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">Hello! I'm your AI assistant powered by OpenRouter. How can I help you?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button class="send-btn" id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>abdelmoez boucetta</span>
+                    <p>Creating beautiful digital experiences</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#myModal2">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="#projects">Novus AI</a></li>
+                        <li><a href="#projects">NestedNote</a></li>
+                        <li><a href="#projects">Travel Blog Platform</a></li>
+                        <li><a href="#projects">View All Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI / UX Design</li>
+                        <li>Web Hosting</li>
+                        <li>Software Development</li>
+                        <li>Mobile App Development</li>
+                        <li>E-commerce Solutions</li>
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-icons">
+                        <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span><i class="fa-brands fa-react"></i> React</span>
+                        <span><i class="fa-brands fa-node-js"></i> Node</span>
+                        <span><i class="fa-brands fa-python"></i> Python</span>
+                        <span><i class="fa-brands fa-angular"></i> Angular</span>
+                        <span><i class="fa-brands fa-vue"></i> Vue.js</span>
+                    </div>
+                </div>
+                <div class="footer-certs">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Google UX Design (2023)</li>
+                        <li>Meta Front-End Developer (2022)</li>
+                        <li>AWS Cloud Practitioner (2021)</li>
+                        <li>Microsoft Azure Fundamentals (2020)</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for design insights and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://behance.com" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 abdelmoez boucetta. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
